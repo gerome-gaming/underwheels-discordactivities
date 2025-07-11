@@ -1,3 +1,6 @@
+import { DiscordProxy } from '@robojs/patch';
+
+DiscordProxy.patch();
 
 var Godot = (() => {
   var _scriptName = typeof document != 'undefined' ? document.currentScript?.src : undefined;
